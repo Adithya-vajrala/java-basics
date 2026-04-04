@@ -23,6 +23,7 @@ public class Primitives {
         short manufacturingYear = 2026;
         short expiryDays = 180;
         System.out.println("Manufacturing Year: " + manufacturingYear + ", Days in Expiry: " + expiryDays);
+        System.out.println("----------------------------------------");
         /*
         salary,rollNumber,otp,cityPopulation,pincode,
         */
@@ -30,15 +31,22 @@ public class Primitives {
         int rollNumber = 522141161;
         int cityPopulation = 10000000;
         int pincode = 522647;
-        System.out.println(salary);
-
-
+        System.out.println("Salary: " + salary + "Roll number: " + rollNumber + "City Population" + cityPopulation + "Pincode: " + pincode);
+        System.out.println("-------------------------------------------------------");
         // variables for long
         // views, bankBalance, followers
         long views = 10000000000L;
         long bankBalance = 2000000000000L;
         long followers = 50000000000000L;
-        System.out.println("Views: " + views +", Bank ");
+        System.out.println("Views: " + views +", Bank Balance: " + bankBalance + ", Followrs: " + followers);
+        System.out.println("---------------------------------------------------");
+        // variables for float
+        // height, pi, temperature etc
+        float height = 5.11f;
+        float pi = 2.54f;
+        float temperature = 43.7f;
+        System.out.println("Height: " + height + ", pi: " + pi + ", temperature: " + temperature );
+
 
     }
 }
