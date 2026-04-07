@@ -69,5 +69,6 @@ public class Operators {
         byte i1 = 10;
         System.out.println(i1 += 1 );
         System.out.println(i1 -= 1);
+
     }
 }
