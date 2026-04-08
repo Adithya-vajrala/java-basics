@@ -13,9 +13,11 @@ public class OperatorsAssignment1 {
         byte quantity = scanner.nextByte();
         double discountPrice;
         double finalProductPrice;
+        double  centralTax = (productPrice * quantity) * 2.5 / 100;
+        double  stateTax = (productPrice * quantity) * 2.5 / 100;
         if (membershipType == 'S'){
-            discountPrice = (productPrice * quantity) * (10 - 2.5 - 2.5) / 100;
-            finalProductPrice = (productPrice * quantity) - discountPrice + 50;
+            discountPrice = (productPrice * quantity) * 10 / 100;
+            finalProductPrice = (productPrice * quantity) - discountPrice + centralTax +stateTax + 50;
             System.out.println("Product Price: " + productPrice);
             System.out.println("Discount Amount: " + discountPrice);
             System.out.println("Final Price per Product: " + finalProductPrice/quantity);
@@ -23,8 +25,8 @@ public class OperatorsAssignment1 {
             System.out.println("Total Amount Saved: " + discountPrice);
         }
         else if (membershipType == 'G') {
-            discountPrice = (productPrice * quantity) * (15 - 2.5 - 2.5) / 100;
-            finalProductPrice = (productPrice * quantity) - discountPrice + 20;
+            discountPrice = (productPrice * quantity) * 15  / 100;
+            finalProductPrice = (productPrice * quantity) - discountPrice + centralTax + stateTax + 20;
             System.out.println("Product Price: " + productPrice);
             System.out.println("Discount Amount: " + discountPrice);
             System.out.println("Final Price per Product: " + finalProductPrice/quantity);
@@ -32,8 +34,8 @@ public class OperatorsAssignment1 {
             System.out.println("Total Amount Saved: " + discountPrice);
         }
         else if (membershipType == 'D') {
-            discountPrice = (productPrice * quantity) * (20 - 2.5 - 2.5) / 100;
-            finalProductPrice = (productPrice * quantity) - discountPrice ;
+            discountPrice = (productPrice * quantity) * 20 / 100;
+            finalProductPrice = (productPrice * quantity) - discountPrice + centralTax + stateTax;
             System.out.println("Product Price: " + productPrice);
             System.out.println("Discount Amount: " + discountPrice);
             System.out.println("Final Price per Product: " + finalProductPrice/quantity);
@@ -42,7 +44,7 @@ public class OperatorsAssignment1 {
         }
         else {
             discountPrice = 0;
-            finalProductPrice = (productPrice * quantity) - discountPrice + 100;
+            finalProductPrice = (productPrice * quantity) - discountPrice + centralTax + stateTax + 100;
             System.out.println("Product Price: " + productPrice);
             System.out.println("Discount Amount: " + discountPrice);
             System.out.println("Final Price per Product: " + finalProductPrice/quantity);
