@@ -54,5 +54,6 @@ public class SmartServiceBillingSystem {
         System.out.println("Final Price: " + (afterDiscount + taxAmount));
         if(planType == 'P' && customerType == 'V')
             System.out.println("Cashback: " + 200);
+        scanner.close();
     }
 }
